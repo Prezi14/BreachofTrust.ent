@@ -55,6 +55,7 @@ nav a {
     text-decoration: none;
     color: #c5c6c7;
     font-family: "Times New Roman", sans-serif;
+    font-size: 100%;
     position: relative;
     z-index: 1;
 }
@@ -81,13 +82,13 @@ nav a:hover::after {
 
 .tagline-container h1 {
     margin: 0;
-    font-size: 21px;
+    font-size: 130%;
     color: #55bdb8;
 }
 
 .tagline-container p {
     margin: 0;
-    font-size: 15px;
+    font-size: 90%;
     color: #c5c6c7;
 }
 
@@ -172,11 +173,11 @@ footer {
 
 .slide-text {
     position: absolute;
-    top: 120px;
-    left: 60px;
+    top: 20%;
+    left: 10%;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 22px;
+    font-size: 150%;
     font-family: 'Times New Roman', Times, serif;
     padding: 0;
     border-radius: 5px;
@@ -362,8 +363,9 @@ footer {
     padding: 2rem;
     max-width: 1200px;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    align-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* About section styles */
@@ -373,8 +375,8 @@ footer {
 
 /* Section headers in cyan */
 h1.about-header {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: 300%;
+    margin-bottom: 5%;
     text-align: center;
     color:#45a29e;
 }
@@ -391,8 +393,9 @@ h2.about-header {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    align-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
     text-align: justify;
     color: #c5c6c7;
 }

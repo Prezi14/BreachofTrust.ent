@@ -42,21 +42,27 @@ function showSlidesManual(n) {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var backgroundImage = document.getElementById("background-image").src;
-    document.body.style.backgroundImage = 'url(' + backgroundImage + ')';
-});
+    // Set background image
+    var backgroundImage = document.getElementById("background-image") ? document.getElementById("background-image").src : '';
+    if (backgroundImage) {
+        document.body.style.backgroundImage = 'url(' + backgroundImage + ')';
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
+    // Show navbar
     const navBar = document.getElementById('nav-bar');
-    navBar.classList.add('show');
+    if (navBar) {
+        navBar.classList.add('show');
+    }
 
+    // Initialize EmailJS
     emailjs.init("YchpvX2wtPJZyG5P18"); // Replace with your EmailJS user ID
 
+    // Handle form submission
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const serviceID = 'Yservice_gqvt21f'; // Replace with your EmailJS service ID
-        const templateID = 'Ytemplate_kcgexe4'; // Replace with your EmailJS template ID
+        const serviceID = 'service_gqvt21f'; // Replace with your EmailJS service ID
+        const templateID = 'template_kcgexe4'; // Replace with your EmailJS template ID
 
         emailjs.sendForm(serviceID, templateID, this)
             .then((response) => {
