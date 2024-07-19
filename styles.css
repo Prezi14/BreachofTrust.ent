@@ -36,6 +36,7 @@ body {
 
 
 /* Navbar styles */
+/* Navbar styles */
 nav {
     position: fixed;
     top: 0;
@@ -48,14 +49,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .nav-links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 nav a {
@@ -66,6 +67,7 @@ nav a {
     font-size: 100%;
     position: relative;
     z-index: 1;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 nav a::after {
@@ -86,6 +88,7 @@ nav a:hover::after {
 
 .tagline-container {
     text-align: left;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .tagline-container h1 {
@@ -104,8 +107,6 @@ nav a:hover::after {
 @media (max-width: 768px) {
     nav {
         padding: 10px;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     nav a {
@@ -412,7 +413,7 @@ footer {
 .about-main-content {
     padding: 2rem;
     max-width: 1200px;
-    margin-top: 50px;
+    margin-top: 6%;
     align-content: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -471,6 +472,7 @@ h2.about-header {
         padding: 1rem; /* Adjust padding for smaller screens */
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 70px;
     }
 }
 
@@ -489,6 +491,7 @@ h2.about-header {
         padding: 0.5rem; /* Adjust padding for smaller screens */
         margin-left: 3%;
         margin-right: 3%;
+        margin-top: 70px;
     }
 }
 
