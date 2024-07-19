@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Initialize EmailJS
-    emailjs.init("YchpvX2wtPJZyG5P18"); // Replace with your EmailJS user ID
+   //  emailjs.init("YchpvX2wtPJZyG5P18"); // Replace with your EmailJS user ID
 
     // Handle form submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+   /* document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
         const serviceID = 'service_gqvt21f'; // Replace with your EmailJS service ID
@@ -72,6 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }, (error) => {
                 console.log('FAILED...', error);
                 alert('Failed to send message. Please try again later.');
-            });
-    });
-});
+            });  
+    }); */
+});  
