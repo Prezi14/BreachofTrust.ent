@@ -48,6 +48,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -91,6 +99,48 @@ nav a:hover::after {
     font-size: 90%;
     color: #c5c6c7;
 }
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        margin-left: 1em;
+        font-size: 90%;
+    }
+
+    .tagline-container h1 {
+        font-size: 120%;
+    }
+
+    .tagline-container p {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 80%;
+        margin-left: 0.5em;
+    }
+
+    .tagline-container h1 {
+        font-size: 110%;
+    }
+
+    .tagline-container p {
+        font-size: 70%;
+    }
+}
+
 
 main {
     padding: 0;
@@ -389,16 +439,59 @@ h2.about-header {
 }
 
 /* General paragraph styles */
+/* General paragraph styles */
 .about-section p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    align-content: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
     color: #c5c6c7;
+    padding: 0 10%; /* Adjust padding for better spacing on smaller screens */
 }
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .about-section p {
+        font-size: 1rem; /* Slightly reduce font size */
+        padding: 0 5%; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    .about-section {
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    h1.about-header, h2.about-header {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .about-main-content {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section p {
+        font-size: 0.9rem; /* Slightly reduce font size */
+        padding: 0 3%; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    h1.about-header, h2.about-header {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+    }
+
+    .about-main-content {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
 
 /* Artists section grid layout */
 .artists-grid {
