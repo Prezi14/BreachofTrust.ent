@@ -498,7 +498,7 @@ h2.about-header {
 
     h1.about-header, h2.about-header {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
-        margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+        margin-bottom: 1.5rem; /* Adjust margin for smaller screens */
     }
 
     .about-main-content {
